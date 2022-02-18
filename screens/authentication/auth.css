@@ -33,14 +33,9 @@
 
 .input {
     display: block;
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
     border-color: var(--gray1);
-}
-
-.btn {
-    display: block;
-    width: 100%;
 }
 
 .btn-primary:hover {
@@ -74,7 +69,6 @@
 }
 
 .btn-link {
-    background-color: transparent;
     color: var(--primary);
     font-size: 0.75rem;
     text-decoration: none;
