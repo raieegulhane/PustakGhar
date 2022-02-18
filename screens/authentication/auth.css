@@ -1,0 +1,90 @@
+.auth_head,
+.auth_foot {
+    background-color: var(--black);
+}
+
+.auth_head {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.auth_container {
+    max-width: 450px;
+    margin: auto;
+    gap: 1.5rem;
+}
+
+.auth {
+    padding: 2rem;
+    border: 1px solid var(--primary);
+    border-radius: var(--br-cr);
+    gap: 1.5rem;
+}
+
+.auth_heading {
+    width: fit-content;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+}
+
+.credantials {
+    gap: 1rem;
+}
+
+.input {
+    display: block;
+    background-color: white;
+    color: black;
+    border-color: var(--gray1);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.auth_alt {
+    margin: auto;
+}
+
+.auth_alt .btn-link {
+    font-size: 1rem;
+}
+
+.auth_foot {
+    padding: 2rem;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.auth_foot_links {
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.btn-link {
+    background-color: transparent;
+    color: var(--primary);
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: var(--orange);
+}
+
+.auth_foot_copy {
+    color: var(--gray2);
+    font-size: 0.75rem;
+}
