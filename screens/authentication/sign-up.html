@@ -26,19 +26,19 @@
             <form action="submit" class="credantials flex-col">
                 <div class="flex-col">
                     <label for="name">Your name</label>
-                    <input class="input input-sq" type="email" placeholder="e.g. Sophie Stark">
+                    <input class="input input-sq" type="text" placeholder="e.g. Sophie Stark" required>
                 </div>
                 <div class="flex-col">
                     <label for="email">Email</label>
-                    <input class="input input-sq" type="email" placeholder="e.g. sophie@example.com">
+                    <input class="input input-sq" type="email" placeholder="e.g. sophie@example.com" required>
                 </div>
                 <div class="flex-col">
                     <label for="password">Password</label>
-                    <input class="input input-sq" type="password" placeholder="Atleast 6 charachters">
+                    <input class="input input-sq" type="password" placeholder="Atleast 6 charachters" minlength="6" required>
                 </div>
                 <div class="flex-col">
                     <label for="password-check">Re-enter password</label>
-                    <input class="input input-sq" type="password" placeholder="Same as above">
+                    <input class="input input-sq" type="password" placeholder="Same as above" minlength="6" required>
                 </div>
                 <button class="btn btn-primary btn-sq">Continue</button>
             </form>
