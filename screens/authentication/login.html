@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/logo/pg-favicon.svg">
+    <link rel="stylesheet" href="https://matrixui.netlify.app/assets/stylesheet.css">
+    <link rel="stylesheet" href="/src/style.css">                            
+    <link rel="stylesheet" href="/screens/authentication/auth.css">
+
+    <title>PustakGhar | Login</title>
+</head>
+<body>
+
+    <header class="auth_head flex-row flex_justify-center">
+        <a class="link-noDecoration" href="/index.html">
+            <img src="/logo/pg-logo-main.svg" alt="PustakGhar logo">
+        </a>
+    </header>
+
+    <main class="auth_container flex-col">
+        <div class="auth flex-col">
+            <h1 class="auth_heading">Login</h1>
+            <form action="submit" class="credantials flex-col">
+                <div class="flex-col">
+                    <label for="email">Email</label>
+                    <input class="input input-sq" type="email" placeholder="e.g. sophie@example.com">
+                </div>
+                <div class="flex-col">
+                    <label for="password">Password</label>
+                    <input class="input input-sq" type="password" placeholder="********">
+                </div>
+                <button class="btn btn-primary btn-sq">Continue</button>
+            </form>
+            <p class="txt-sm">
+                By continuing, you agree to PustakGhar's <a href="#" class="btn-link">Condition of Use</a> and <a href="#" class="btn-link">Privacy Policy</a>.
+            </p> 
+        </div>
+        <div class="auth_alt">
+            New user? <a href="/screens/authentication/sign-up.html" class="btn-link">Sign Up</a> here.
+        </div>
+    </main>
+
+    <footer class="auth_foot flex-col">
+        <div class="auth_foot_links flex-row flex_justify-center">
+            <a href="#" class="btn-link">Condition of Use</a>
+            <a href="#" class="btn-link">Privacy Policy</a>
+            <a href="#" class="btn-link">Help Center</a>
+        </div>
+        <div class="auth_foot_copy flex-row flex_justify-center">
+            &copy; 2022, PustakGhar
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -8,8 +8,21 @@
     --text-font: 'Poppins', sans-serif;
 
     /*** color ***/
-    --primary-pg: #FF3B30;
-    --black-pg: #000000;
-    --white-pg: #ffffff;
-    --grey1-pg: #555;
+    --primary: #FF3B30;
+    --black: #000000;
+    --white: #ffffff;
+    --gray1: #ccc;
+    --gray2: #aaa;
+
+    --orange: #ff5739;
+}
+
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.input::placeholder {
+    color: var(--gray1);
 }
