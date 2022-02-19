@@ -13,17 +13,18 @@
 
     /*** color ***/
     --primary: #ec5d0f;
+    --background: #ddd;
     --black: #000000;
-    --white: #ffffff;
+    --white: #eee;
     --gray1: #ccc;
     --gray2: #aaa;
-    --gray3: #222;
+    --gray3: #333;
     --orange: #f27a3b;
 }
 
 
 body {
-    background-color: var(--white);
+    background-color: var(--background);
     color: var(--black);
 }
 
