@@ -1,0 +1,20 @@
+.btn-link {
+    color: var(--primary);
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.btn-icon {
+    color: var(--gray2);
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    background-color: transparent;
+    color: var(--orange);
+}
