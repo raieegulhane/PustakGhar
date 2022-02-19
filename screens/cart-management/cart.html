@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/screens/cart-management/cart.css">
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
+
+    <title>PustakGhar | Cart</title>
+</head>
+<body>
+    <!------------ navbar ------------>
+    <div class="nav_container">
+        <div class="nav-primary flex-row flex_align-middle">
+            <a class="link-noDecoration" href="/index.html">
+                <img src="/logo/pg-logo-main.svg" alt="PustakGhar logo">
+            </a>
+            <div class="nav_container-secondary flex-row flex_align-middle">
+                <div class="nav_searchbox container_input-btn input-sq flex-row">
+                    <input class="nav_searchbox-input input-btn" type="text" placeholder="Search">
+                    <button class="btn_search btn-icon nav_icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <ul class="nav_list-secondary flex-row flex_align-middle">
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link link-noDecoration flex-col flex_align-middle" href="/screens/authentication/login.html">
+                            <i class="fa-solid fa-user nav_icon"></i>
+                            <span class="navlink_text txt-sm">Login</span>
+                        </a>                    
+                    </li>
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link link-noDecoration flex-col flex_align-middle" href="/screens/wishlist/wishlist.html">
+                            <i class="fa-solid fa-heart nav_icon"></i>
+                            <span class="navlink_text txt-sm">Wishlist</span>
+                        </a>  
+                    </li>
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link link-noDecoration flex-col flex_align-middle" href="/screens/cart-management/cart.html">
+                            <i class="fa-solid fa-cart-shopping nav_icon"></i>
+                            <span class="navlink_text txt-sm">Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-secondary flex-row flex_align-middle">
+            <ul class="list-noBullets flex-row flex_align-middle">
+                <li>
+                    <button class="btn_nav-sec btn-link btn-wtIcon flex-row flex_align-middle">
+                        <span class="btn-category">All CATEGORIES</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Best Sellers
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Latest Releases
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Today's Deals
+                    </button>
+                </li>
+            </ul>
+            <button class="btn-bookclub btn_nav-sec btn-link">
+                JOIN OUR BOOKCLUB TODAY!!!
+            </button>
+        </div>
+    </div>
+
+    <!------------ main ------------>
+    <main class="cart_container grid grid-31layout">
+        <div class="container_cart-list">
+            <div class="cart_header flex-row flex_justify-sb">
+                <h1 class="cart_heading txt-underline">Cart</h1>
+                <button class="btn btn-outline btn-sq btn-wtIcon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Share With Friends
+                </button>
+            </div>
+            <div class="container_sort flex-row flex_justify-end">
+                <btn class="cart_sort btn btn-link btn-wtIcon flex_align-middle">
+                    Filter & Sort
+                    <i class="fa-solid fa-angle-down"></i>
+                </btn>
+            </div>
+            <ul class="cart_list list-noBullets">
+                <li>
+                    <div class="card_container card-hr">
+                        <div class="card_image-container">
+                            <img class="card_image image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                        </div>
+                        <div class="card_content">
+                            <div class="item_des flex-col">
+                                <div>
+                                    <h2>Elon Musk</h2>
+                                    <p>Ashley Vancee</p>
+                                    <p class="txt-bold txt-sm">Paperback</p>
+                                </div>
+                                <p>₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                            </div>
+                            <div class="card_btn-container">
+                                <button class="btn btn-outline btn-wtIcon btn-sq" type="button">
+                                    <i class="fa-solid fa-heart"></i>
+                                    Move to Wishlist
+                                </button>  
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                        </div>
+                        <button class="btn-icon card-del">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_container card-hr">
+                        <div class="card_image-container">
+                            <img class="card_image image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                        </div>
+                        <div class="card_content">
+                            <div class="item_des flex-col">
+                                <div>
+                                    <h2>Elon Musk</h2>
+                                    <p>Ashley Vancee</p>
+                                    <p class="txt-bold txt-sm">Paperback</p>
+                                </div>
+                                <p>₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                            </div>
+                            <div class="card_btn-container">
+                                <button class="btn btn-outline btn-wtIcon btn-sq" type="button">
+                                    <i class="fa-solid fa-heart"></i>
+                                    Move to Wishlist
+                                </button>  
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                        </div>
+                        <button class="btn-icon card-del">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_container card-hr">
+                        <div class="card_image-container">
+                            <img class="card_image image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                        </div>
+                        <div class="card_content">
+                            <div class="item_des flex-col">
+                                <div>
+                                    <h2>Elon Musk</h2>
+                                    <p>Ashley Vancee</p>
+                                    <p class="txt-bold txt-sm">Paperback</p>
+                                </div>
+                                <p>₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                            </div>
+                            <div class="card_btn-container">
+                                <button class="btn btn-outline btn-wtIcon btn-sq" type="button">
+                                    <i class="fa-solid fa-heart"></i>
+                                    Move to Wishlist
+                                </button>  
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                        </div>
+                        <button class="btn-icon card-del">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!------- price details ------->
+        <div class="container_price-details flex-col">
+            <h2 class="price_details-heading">Price Details</h2>
+            <ul class="price_details-list list-noBullets flex-col">
+                <li class="flex-row flex_justify-sb">
+                    <p>Total Price (<span class="item_count">3</span> Items)</p>
+                    <p>₹ <span class="total_price">1797</span></p>
+                </li>
+                <li class="flex-row flex_justify-sb">
+                    <p>Discounts</p>
+                    <p>-₹ <span class="total_price">1347</span></p>
+                </li>
+                <li class="flex-row flex_justify-sb">
+                    <p>Delivery Charges</p>
+                    <p>₹ <span class="total_price">45</span></p>
+                </li>
+            </ul>
+            <div class="price_total flex-row flex_justify-sb">
+                <p class="txt-bold">Total Amount</p>
+                <p class="txt-bold">₹ <span class="total_price">495</span></p>
+            </div>
+            <button class="btn btn-primary btn-block btn-sq">Proceed to Buy</button>
+        </div>
+    </main>
+</body>
+</html>

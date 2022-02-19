@@ -20,6 +20,8 @@
     --gray2: #aaa;
     --gray3: #333;
     --orange: #f27a3b;
+    --green: #019b01;
+    --red: #ff2424;
 }
 
 
@@ -34,4 +36,16 @@ body {
 
 input:focus {
     border-left: 3px solid var(--primary);
+}
+
+.txt-primary {
+    color: var(--primary);
+}
+
+.txt-green {
+    color: var(--green);
+}
+
+.txt-red {
+    color: var(--red);
 }
