@@ -2,7 +2,9 @@
     background-color: var(--white);
     width: 70%;
     padding: 2rem;
+    border-radius: var(--br-sq);
     margin: 2rem auto;
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .wishlist_header {
