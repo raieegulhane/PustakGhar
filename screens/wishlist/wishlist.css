@@ -46,7 +46,10 @@
 
 .card_img-container {
     height: 400px;
+}
 
+.item_des {
+    gap: 1rem;
 }
 
 .card-del {

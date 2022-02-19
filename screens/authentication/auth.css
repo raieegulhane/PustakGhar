@@ -15,6 +15,7 @@
 }
 
 .auth {
+    background-color: var(--white);
     padding: 2rem;
     border: 1px solid var(--primary);
     border-radius: var(--br-cr);
