@@ -5,6 +5,7 @@
 @import url("https://matrixui.netlify.app/assets/stylesheet.css");
 @import url("/assets/button.css");
 @import url("/assets/navbar.css");
+@import url("/assets/footer.css");
 
 /* variables */
 :root {
@@ -13,7 +14,7 @@
 
     /*** color ***/
     --primary: #ec5d0f;
-    --background: #eee;
+    --background: #efefef;
     --black: #000000;
     --white: #f7f7f7;
     --gray1: #ccc;

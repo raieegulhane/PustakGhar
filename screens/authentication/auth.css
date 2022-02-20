@@ -1,5 +1,4 @@
-.auth_head,
-.auth_foot {
+.auth_head{
     background-color: var(--black);
 }
 
@@ -56,30 +55,4 @@
 
 .auth_alt .btn-link {
     font-size: 1rem;
-}
-
-.auth_foot {
-    padding: 2rem;
-    margin-top: 2rem;
-    gap: 1.5rem;
-}
-
-.auth_foot_links {
-    gap: 1.5rem;
-    margin: auto;
-}
-
-.btn-link {
-    color: var(--primary);
-    font-size: 0.75rem;
-    text-decoration: none;
-}
-
-.btn-link:hover {
-    color: var(--orange);
-}
-
-.auth_foot_copy {
-    color: var(--gray2);
-    font-size: 0.75rem;
 }

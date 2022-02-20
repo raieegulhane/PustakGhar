@@ -19,8 +19,12 @@
                 <img src="/logo/pg-logo-main.svg" alt="PustakGhar logo">
             </a>
             <ul class="nav_list-primary flex-row flex_align-middle">
-                <li class="nav_item list-noBullets">Home</li>
-                <li class="nav_item list-noBullets">Categories</li>
+                <li class="nav_item list-noBullets">
+                    <a class="link-noDecoration btn btn-link nav_btn-link navlink_text" href="/index.html">Home</a>
+                </li>
+                <li class="nav_item list-noBullets">
+                    <a class="link-noDecoration btn btn-link nav_btn-link navlink_text" href="/screens/product_listing/products.html">Book Store</a>
+                </li>
             </ul>
             <div class="nav_container-secondary flex-row flex_align-middle">
                 <div class="nav_searchbox container_input-btn input-sq flex-row">
@@ -31,19 +35,19 @@
                 </div>
                 <ul class="nav_list-secondary flex-row flex_align-middle">
                     <li class="nav_item list-noBullets">
-                        <a class="btn btn-link link-noDecoration flex-col flex_align-middle" href="/screens/authentication/login.html">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/authentication/login.html">
                             <i class="fa-solid fa-user nav_icon"></i>
                             <span class="navlink_text txt-sm">Login</span>
                         </a>                    
                     </li>
                     <li class="nav_item list-noBullets">
-                        <a class="btn btn-link link-noDecoration flex-col flex_align-middle" href="/screens/wishlist/wishlist.html">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/wishlist/wishlist.html">
                             <i class="fa-solid fa-heart nav_icon"></i>
                             <span class="navlink_text txt-sm">Wishlist</span>
                         </a>  
                     </li>
                     <li class="nav_item list-noBullets">
-                        <a class="btn btn-link link-noDecoration flex-col flex_align-middle" href="/screens/cart-management/cart.html">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/cart-management/cart.html">
                             <i class="fa-solid fa-cart-shopping nav_icon"></i>
                             <span class="navlink_text txt-sm">Cart</span>
                         </a>
@@ -81,7 +85,7 @@
             </button>
         </div>
     </div>
-
+    
     <!------------ main ------------>
     <main class="cart_container grid grid-31layout">
         <div class="container_cart-list">
@@ -213,5 +217,20 @@
             <button class="btn btn-primary btn-block btn-sq">Proceed to Buy</button>
         </div>
     </main>
+
+    <footer class="footer flex-col flex_align-middle">
+        <a class="link-noDecoration" href="/index.html">
+            <img src="/logo/pg-logo-main.svg" alt="PustakGhar logo">
+        </a>
+        <div class="foot_links flex-row flex_justify-center">
+            <a href="#" class="foot_btn btn-link">Condition of Use</a>
+            <a href="#" class="foot_btn btn-link">Privacy Policy</a>
+            <a href="#" class="foot_btn btn-link">Help Center</a>
+        </div>
+        <div class="foot_copy flex-col flex_align-middle">
+            <p>Made with &lt;/&gt; by Raiee</p>
+            <p>&copy; 2022, PustakGhar</p>
+        </div>
+    </footer>
 </body>
 </html>

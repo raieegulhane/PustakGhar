@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--black);
+    padding: 2rem;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.foot_links {
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.foot_btn {
+    color: var(--primary);
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.foot_btn:hover {
+    color: var(--orange);
+}
+
+.foot_copy {
+    color: var(--gray2);
+    font-size: 0.75rem;
+}
