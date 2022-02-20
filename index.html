@@ -5,14 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="/logo/pg-favicon-main.svg">
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/screens/home-page/home.css">
 
     <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
 
     <title>PustakGhar</title>
 </head>
 <body>
+    <!------------ navbar ------------>
+    <div class="nav_container">
+        <div class="nav-primary flex-row flex_align-middle">
+            <a class="link-noDecoration" href="/index.html">
+                <img src="/logo/pg-logo-main.svg" alt="PustakGhar logo">
+            </a>
+            <ul class="nav_list-primary flex-row flex_align-middle">
+                <li class="nav_item list-noBullets">
+                    <a class="link-noDecoration btn btn-link nav_btn-link navlink_text" href="/index.html">Home</a>
+                </li>
+                <li class="nav_item list-noBullets">
+                    <a class="link-noDecoration btn btn-link nav_btn-link navlink_text" href="/screens/product_listing/products.html">Book Store</a>
+                </li>
+            </ul>
+            <div class="nav_container-secondary flex-row flex_align-middle">
+                <div class="nav_searchbox container_input-btn input-sq flex-row">
+                    <input class="nav_searchbox-input input-btn" type="text" placeholder="Search">
+                    <button class="btn_search btn-icon nav_icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <ul class="nav_list-secondary flex-row flex_align-middle">
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/authentication/login.html">
+                            <i class="fa-solid fa-user nav_icon"></i>
+                            <span class="navlink_text txt-sm">Login</span>
+                        </a>                    
+                    </li>
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/wishlist/wishlist.html">
+                            <i class="fa-solid fa-heart nav_icon"></i>
+                            <span class="navlink_text txt-sm">Wishlist</span>
+                        </a>  
+                    </li>
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/cart-management/cart.html">
+                            <i class="fa-solid fa-cart-shopping nav_icon"></i>
+                            <span class="navlink_text txt-sm">Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="nav-secondary flex-row flex_align-middle">
+            <ul class="list-noBullets flex-row flex_align-middle">
+                <li>
+                    <button class="btn_nav-sec btn-link btn-wtIcon flex-row flex_align-middle">
+                        <span class="btn-category">All CATEGORIES</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Best Sellers
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Latest Releases
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Today's Deals
+                    </button>
+                </li>
+            </ul>
+            <button class="btn-bookclub btn_nav-sec btn-link">
+                JOIN OUR BOOKCLUB TODAY!!!
+            </button>
+        </div>
+    </div>
+
+    <!------------ main ------------>
+    <main class="main_container_home flex-col">
+        <!-- hero -->
+        <div class="hero_container">
+            <img class="hero_img img-100pr" src="/images/reading4.svg" alt="hero image">
+            <a class="link-noDecoration hero_btn btn btn-primary btn-sq" href="/screens/product_listing/products.html">
+                Visit Bookstore Now
+            </a>
+        </div>
+
+        <!-- genre display -->
+        <div class="genre_container flex-col">
+            <h1 class="genre_heading txt-underline">Genres</h1>
+            <div class="genre_display flex-row  flex_justify-sa">
+                <div class="genre_item flex-col flex_align-middle">
+                    <img class="img-border img-100pr img-rd" src="/images/adventure-img.jpg" alt="">
+                    <p class="txt-primary txt-bold">Adventure</p>
+                </div>
+                <div class="genre_item flex-col flex_align-middle">
+                    <img class="img-border img-100pr img-rd" src="/images/fantasy-img.jpg" alt="">
+                    <p class="txt-primary txt-bold">Fantasy</p>
+                </div>
+                <div class="genre_item flex-col flex_align-middle">
+                    <img class="img-border img-100pr img-rd" src="/images/romance-img.jpg" alt="">
+                    <p class="txt-primary txt-bold">Romance</p>
+                </div>
+                <div class="genre_item flex-col flex_align-middle">
+                    <img class="img-border img-100pr img-rd" src="/images/scifi-img.jpg" alt="">
+                    <p class="txt-primary txt-bold">Science Fiction</p>
+                </div>
+                <div class="genre_item flex-col flex_align-middle">
+                    <img class="img-border img-100pr img-rd" src="/images/thriller-img.jpg" alt="">
+                    <p class="txt-primary txt-bold">Thriller</p>
+                </div>
+                <div class="genre_item flex-col flex_align-middle">
+                    <img class="img-border img-100pr img-rd" src="/images/comic-img.jpg" alt="">
+                    <p class="txt-primary txt-bold">Comics</p>
+                </div>
+            </div>
+            <a class="genre_btn btn btn-outline btn-sq link-noDecoration" href="/screens/product_listing/product.css">
+                See All Genre
+            </a>
+            </button>
+        </div>
+
+        <!-- discounts -->
+        <div class="discount_container flex-col">
+            <h1 class="discount_heading txt-underline">Discounts & offers you can't miss !!!</h1>
+            <div class="discount_display flex-row  flex_justify-sa">
+                <div class="card_container card-vr">
+                    <img class="image-100pr" src="/images/book1.jpg">
+                    <p class="txt-bold">Buy 3 or more books, and get 8% off!</p>
+                    <button class="discount_btn btn-link">Shop Now</button>
+                </div>
+                <div class="card_container card-vr">
+                    <img class="image-100pr" src="/images/book2.jpg">
+                    <p class="txt-bold">Save upto 15% on top book bundles!!</p>
+                    <button class="discount_btn btn-link">Shop Now</button>
+                </div>
+                <div class="card_container card-vr">
+                    <img class="image-100pr" src="/images/book3.jpg">
+                    <p class="txt-bold">Get 20% off on Boxsets and Collectibles</p>
+                    <button class="discount_btn btn btn-link">Shop Now</button>
+                </div>
+                <div class="card_container card-vr">
+                    <img class="image-100pr" src="/images/book4.jpg">
+                    <p class="txt-bold">Exchange your old books, get 50% 0ff!</p>
+                    <button class="discount_btn btn-link">Shop Now</button>
+                </div>
+            </div>    
+        </div>
+    </main>
+
+
+    <!------------ footer ------------>
+    <footer class="footer flex-col flex_align-middle">
+        <a class="link-noDecoration" href="/index.html">
+            <img src="/logo/pg-logo-main.svg" alt="PustakGhar logo">
+        </a>
+        <div class="foot_links flex-row flex_justify-center">
+            <a href="#" class="foot_btn btn-link">Condition of Use</a>
+            <a href="#" class="foot_btn btn-link">Privacy Policy</a>
+            <a href="#" class="foot_btn btn-link">Help Center</a>
+        </div>
+        <div class="foot_copy flex-col flex_align-middle">
+            <p>Made with &lt;/&gt; by Raiee</p>
+            <p>&copy; 2022, PustakGhar</p>
+        </div>
+    </footer>
 </body>
 </html>

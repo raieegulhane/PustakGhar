@@ -1,0 +1,70 @@
+/* hero */
+.hero_container {
+    position: relative;
+    padding-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.hero_btn {
+    position: absolute;
+    top: 70%;
+    right: 30%;
+}
+
+
+/* genre display */
+.genre_container {
+    background-color: var(--black);
+    padding: 2rem 0;
+    border-radius: var(--br-sq);
+    margin: 2rem 1rem;
+}
+
+.genre_heading {
+    color: var(--white);
+    text-decoration-color: var(--primary);
+    margin: auto;
+}
+
+.genre_display {
+    padding: 2rem;
+}
+
+.genre_item {
+    width: 150px;
+    gap: 1rem;
+}
+
+.img-border {
+    border-width: 2px;
+}
+
+.genre_btn {
+    max-width: 250px;
+    margin: auto;
+}
+
+
+/* discount */
+.discount_container {
+    padding: 3rem 2rem;
+}
+
+.discount_heading {
+    text-decoration-color: var(--primary);
+    padding-bottom: 1.5rem;
+    margin: auto;
+}
+
+.card_container {
+    background-color: var(--white);
+    width: 300px;
+}
+
+.card_container:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.discount_btn {
+    bottom: 0;
+}
