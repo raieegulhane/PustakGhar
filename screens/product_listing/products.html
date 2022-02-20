@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/screens/product_listing/product.css">
+
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
+
+    <title>PustakGhar</title>
+</head>
+<body>
+    <!------------ navbar ------------>
+    <div class="nav_container">
+        <div class="nav-primary flex-row flex_align-middle">
+            <a class="link-noDecoration" href="/index.html">
+                <img src="/logo/pg-logo-main.svg" alt="PustakGhar logo">
+            </a>
+            <ul class="nav_list-primary flex-row flex_align-middle">
+                <li class="nav_item list-noBullets">
+                    <a class="link-noDecoration btn btn-link nav_btn-link navlink_text" href="/index.html">Home</a>
+                </li>
+                <li class="nav_item list-noBullets">
+                    <a class="link-noDecoration btn btn-link nav_btn-link navlink_text" href="/screens/product_listing/products.html">Book Store</a>
+                </li>
+            </ul>
+            <div class="nav_container-secondary flex-row flex_align-middle">
+                <div class="nav_searchbox container_input-btn input-sq flex-row">
+                    <input class="nav_searchbox-input input-btn" type="text" placeholder="Search">
+                    <button class="btn_search btn-icon nav_icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <ul class="nav_list-secondary flex-row flex_align-middle">
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/authentication/login.html">
+                            <i class="fa-solid fa-user nav_icon"></i>
+                            <span class="navlink_text txt-sm">Login</span>
+                        </a>                    
+                    </li>
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/wishlist/wishlist.html">
+                            <i class="fa-solid fa-heart nav_icon"></i>
+                            <span class="navlink_text txt-sm">Wishlist</span>
+                        </a>  
+                    </li>
+                    <li class="nav_item list-noBullets">
+                        <a class="btn btn-link nav_btn-link link-noDecoration flex-col flex_align-middle" href="/screens/cart-management/cart.html">
+                            <i class="fa-solid fa-cart-shopping nav_icon"></i>
+                            <span class="navlink_text txt-sm">Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-secondary flex-row flex_align-middle">
+            <ul class="list-noBullets flex-row flex_align-middle">
+                <li>
+                    <button class="btn_nav-sec btn-link btn-wtIcon flex-row flex_align-middle">
+                        <span class="btn-category">All CATEGORIES</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Best Sellers
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Latest Releases
+                    </button>
+                </li>
+                <li>
+                    <button class="btn_nav-sec btn-link">
+                        Today's Deals
+                    </button>
+                </li>
+            </ul>
+            <button class="btn-bookclub btn_nav-sec btn-link">
+                JOIN OUR BOOKCLUB TODAY!!!
+            </button>
+        </div>
+    </div>
+
+    <!------------ main ------------>
+    <div class="container_product-listing grid grid-13layout">
+        <!----- filter and sort ----->
+        <div class="container_filters flex-col">
+            <!--- filters --->
+            <div class="filters flex-col flex_align-top">
+                <div class="filter_header flex-row flex_align-bottom flex_justify-sb">
+                    <h2 class="filter_heading txt-underline">Filters</h2>
+                    <button class="btn-clearAll btn btn-link">Clear All</button>
+                </div>
+                <div>
+                    <h4>Arival</h4>
+                    <ul class="list-noBullets">
+                        <li>
+                            <input type="radio" name="arival" id="last30days" value="last_30_days">
+                            <label for="last30days">Last 30 days</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="arival" id="last90days" value="last_90_days">
+                            <label for="last90days">Last 90 days</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="arival" id="next90days" value="next_90_days">
+                            <label for="next90days">Next 90 days</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Genre</h4>
+                    <ul class="list-noBullets">
+                        <li>
+                            <input type="checkbox" name="genre" id="act&adv" value="action_&_adventure">
+                            <label for="act&adv">Action & Adventure</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="biog" value="biographies">
+                            <label for="biog">Biographies</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="child&ya" value="children_&_young-adult">
+                            <label for="child&ya">Children's & Young Adult</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="com&man" value="comics_&_manga">
+                            <label for="com&man">Comics & Mangas</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="crime&mys" value="crime_thriller_mystry">
+                            <label for="crime&mys">Crime, Thriller & Mystery</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="scifi" value="sci-fi_&_fantasy">
+                            <label for="scifi">Science Fiction & Fantasy</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="lit&fic" value="litrature_&_fiction">
+                            <label for="lit&fic">Literature & Fiction</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="romance" value="romance">
+                            <label for="romance">Romance</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="sci&tech" value="science_&_technology">
+                            <label for="sci&tech">Sciences & Technology</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" id="txtbook" value="textbooks_&_stydy_guides">
+                            <label for="txtbook">Textbooks & Study Guides</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Format</h4>
+                    <ul class="list-noBullets">
+                        <li>
+                            <input type="checkbox" name="format" id="pprbck" value="paperback">
+                            <label for="pprbck">Paperback</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="format" id="hrdcvr" value="hardcover">
+                            <label for="hrdcvr">Hardcover</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Ratings</h4>
+                    <ul class="list-noBullets">
+                        <li>
+                            <input type="radio" name="ratings" id="4str" value="4_star_&_up">
+                            <label for="4str">4 Stars & Up</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="ratings" id="3str" value="3_star_&_up">
+                            <label for="3str">3 Stars & Up</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="ratings" id="2str" value="2_star_&_up">
+                            <label for="2str">2 Stars & Up</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="ratings" id="1str" value="1_star_&_up">
+                            <label for="1str">1 Star & Up</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Price</h4>
+                    <ul class="list-noBullets">
+                        <li>
+                            <input type="radio" name="price" id="prc-below_100" value="under_100">
+                            <label for="prc-below_100">Under ₹100</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price" id="prc-100to500" value="100_to_500">
+                            <label for="prc-100to500">₹100 to ₹200</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price" id="prc-500to1000" value="500_to_1000">
+                            <label for="prc-500to1000">₹200 to ₹500</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price" id="prc-1000to1500" value="1000_to_1500">
+                            <label for="prc-1000to1500">₹500 to ₹1000</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price" id="prc-above1500" value="over_1500">
+                            <label for="prc-above1500">Over ₹1000</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--- sort --->
+            <div class="sort flex-col">
+                <h2 class="filter_heading txt-underline">Sort</h2>
+                <ul class="list-noBullets">
+                    <li>
+                        <input type="radio" name="sort" id="prc-h_to_l" value="high_to_low">
+                        <label for="prc-h_to_l">Price: Low to High</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sort" id="prc-l_to_h" value="low_to_high">
+                        <label for="prc-l_to_h">Price: High to Low</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!------- products ------->
+        <div class="container_products">
+            <div class="product_header flex-row flex_justify-sb">
+                <h1 class="product_heading txt-underline">All Books</h1>
+                <button class="btn btn-outline btn-sq btn-wtIcon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Share With Friends
+                </button>
+            </div>
+
+            <!-- product list -->
+            <div class="product_list grid grid-centered">
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card_container card-vr">
+                    <img class="card_img image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                    <div class="card_content flex-col">
+                        <div>
+                            <div class="card_header flex-row flex_justify-sb flex_align-middle">
+                                <h3 >Elon Musk</h3>
+                                
+                            <div class="card_btn-container">
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn-icon" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                            </div>
+                            <p class="txt-sm">Ashley Vancee</p>
+                        </div>
+                        <p class="txt-sm">₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-green">74% off</span></p>
+                        <button class="txt-sm btn btn-block btn-primary btn-wtIcon btn-sq" type="button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
