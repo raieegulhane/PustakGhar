@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--black);
-    padding: 2rem;
+    padding: 2rem 0 0.5rem 0;
     margin-top: 2rem;
     gap: 1.5rem;
 }
@@ -23,4 +23,9 @@
 .foot_copy {
     color: var(--gray2);
     font-size: 0.75rem;
+}
+
+.container_social {
+    margin-top: 0.5rem;
+    gap: 1rem;
 }

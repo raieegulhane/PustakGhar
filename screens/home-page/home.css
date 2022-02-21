@@ -15,8 +15,6 @@
 /* genre display */
 .genre_container {
     background-color: var(--black);
-    padding: 2rem 0;
-    border-radius: var(--br-sq);
     margin: 2rem 1rem;
 }
 
